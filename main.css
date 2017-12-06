@@ -31,7 +31,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('apple-bite.jpeg');
+  background-image: url('images/apple-bite.jpeg');
   background-size: cover;  
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #ff00ff;
@@ -95,4 +95,14 @@ footer ul {
 footer li img {
   width: 32px;
   height: 32px;
+}
+.img {
+  
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #ccc;
+}
+.doctor-img {
+  border: 5px dashed salmon;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #ccc;
 }
