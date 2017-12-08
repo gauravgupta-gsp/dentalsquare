@@ -31,10 +31,12 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('images/apple-bite.jpeg');
+  /*background-image: url('images/apple-bite.jpeg');*/
+    background: linear-gradient(to bottom right,#55555563,#ffffffa6),url(images/apple-bite.jpeg);
+
   background-size: cover;  
   height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #ff00ff;
+  text-shadow: 0.25px 0.25px 0.25px #382628;
 
 }
 
@@ -42,12 +44,12 @@ header p {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: #ff00ff;
+  color: #ffffff;
 }
 
 .jumbotron h3 {
   margin: 0 0 20px;
-  color: #ff00ff;
+  color: #382628;
 }
 
 section .row img {
@@ -102,7 +104,16 @@ footer li img {
   box-shadow: 5px 5px 20px #ccc;
 }
 .doctor-img {
-  border: 5px dashed salmon;
+  border: 5px dashed #382628;
   border-radius: 5px;
   box-shadow: 5px 5px 20px #ccc;
+}
+.primary-color {
+  color: #382628;
+}
+.secondary-color {
+  color: #f8cabd;
+}
+.third-color {
+  color: #ffffff;
 }
