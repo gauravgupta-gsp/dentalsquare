@@ -117,3 +117,8 @@ footer li img {
 .third-color {
   color: #ffffff;
 }
+#map {
+   width: 100%;
+   height: 300px;
+   background-color: grey;
+ }

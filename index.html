@@ -3,18 +3,30 @@
 <head>
   <title>Dental Square</title>
   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="dental.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style> -->
+
 </head>
 <body>
   <header class="container">
     <div class="row">
       <h1 class="col-sm-4 primary-color" style="font-family: sans-serif;">Dental Square</h1>
       <nav class ="col-sm-8 text-right">
-        <p>Treatments</p>
+        <a href="#treatments"><p>Dental Services</p> </a>
         <p>Locate Us</p>
-        <p>About Us</p>
+        <a href="#Aboutus"><p>About Us</p></a>
       </nav>
     </div>
   </header>
@@ -27,34 +39,34 @@
       </div>
     </div>
   </section>
-  <div class="row">   
+  <div id="treatments" class="row">   
     <div class="col-sm-12" style="background:radial-gradient(#f8cabd,#ffffff,#ffffff);" 
     >      
-      <h1 align="center" style="color:#382628;" >Treatments</h1>
+      <h1 align="center" style="color:#382628;" >Dental Services</h1>
     </div> 
   </div>
   <section class="container">
     <div class="row">
       <figure class="col-sm-6">
-        <h3>Routine Dental Exam and Check Up  </h3>
+        <h3>General Dentistry  </h3>
         <img class="img" src="images/routine_checkup.jpg" />
         
       </figure>
       <figure class="col-sm-6">
-        <h3>Teeth Whitening</h3>
+        <h3>Cosmetic Dentistry</h3>
         <img class="img" src=images/teeth_whitening.jpg
 " />
       </figure>              
     </div>
     <div class="row">
       <figure class="col-sm-6">
-        <h3>Root Canals</h3>
-        <img class="img" src="images/root_canal.jpg
+        <h3>Dental Implants</h3>
+        <img class="img" src="images/dental_implants.jpg
 " />
       </figure>
       <figure class="col-sm-6">
-        <h3>Tooth Extraction</h3>
-        <img class="img" src="images/tooth_extractions.jpg
+        <h3>Orthodontics</h3>
+        <img class="img" src="images/dentures.jpg
 " />
       </figure>
     </div>
@@ -74,10 +86,49 @@
       <figure class="col-sm-6">        
         <h1>Dr Prabjot kaur</h1>
         <p style="font-size: 20px">Dr Prabhjot kaur with over 14 years of experience has graduated from from Dental College. She has serverd as chief dentist officer in Bhai Ghanaiya Ji mission society. Her domain of expertise is tooth extraction, cosmetic dentistry, crown and bridge , root canal treatment, teeth whitening and full mouth implants. </p>
-      </figure>
-      
+      </figure>      
     </div>
   </section>
+<div class="row" id="Aboutus">   
+    <div class="col-sm-12" style="background:radial-gradient(#f8cabd,#ffffff,#ffffff);" 
+    >      
+      <h1 align="center" style="color:#382628;" >About Us</h1>
+    </div> 
+  </div>
+
+  <section class="container" style="margin-top: 10px">
+    <div class="row" style="margin-top: 10px">
+      <figure class="col-sm-6">
+        <h3>Dental Square</h3>
+        <h5>Booth No. 4-5, B-Block Market, New Amritsar Colony, Amritsar</h5>
+        <h5>Near State Bank of India &amp; Bank of Baroda</h5>
+        <h5>Mobile 9888568886</h5>
+      </figure>
+    </div>
+    <div class="row" id="Aboutus">   
+    <div class="col-sm-12" style="background:radial-gradient(#f8cabd,#ffffff,#ffffff);" 
+    >      
+      <h1 align="center" style="color:#382628;" >Getting Here</h1>
+    </div> 
+  </div>
+    <div class="row">
+      <figure class="col-sm-12">
+        <div id="map">
+          
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <h1 align="center">Booth No. 4-5, B-Block Market, New Amritsar Colony, Amritsar </h1>
+  <h2 align="center">Near State Bank of India &amp; Bank of Baroda</h2>
+
+  <div style="background: #382628; color: white; padding: 20px; text-align: center; font-family: sans-serif; font-size: 25px;">
+    <p>You can <strong>book an appointment by calling us at +91-9888568886</strong> Mon - Fri 9am - 8pm </p>
+    <p> email us at <strong style="text-decoration: underline;">contact@dentalsquare.co.in</strong></p>
+    
+  </div>
+
   <footer class="container">
     <div class="row">
       <p class="col-sm-4">&copy; 2017 Dental Square</p>
@@ -93,10 +144,15 @@
         </li>
         <li class="col-sm-1">
             <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"/>
-        </li>
-        
+        </li>        
       </ul>
     </div>
   </footer>
+
+  
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzXkecfeAikD9IIXRtEc-Pju_73Ie8qEM&callback=initMap">
+    </script>
+
 </body>
 </html>
