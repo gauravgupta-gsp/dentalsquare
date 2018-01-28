@@ -128,3 +128,6 @@ footer li img {
 .h4_carousel {
   color: #ffffff; font-family: sans-serif;
 }
+.position-fixed {
+  position: fixed;
+}
